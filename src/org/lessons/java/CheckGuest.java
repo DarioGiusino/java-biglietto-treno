@@ -11,12 +11,21 @@ public class CheckGuest {
 		String userName = scanner.nextLine();
 		
 		boolean isInvited = false;
+		int i = 0;
 		
-		for (int i = 0; i < guestList.length; i++) {
+//		for (int i = 0; i < guestList.length; i++) {
+//			if(guestList[i].equals(userName)) {
+//				isInvited = true;
+//				break;
+//			}
+//		}
+		
+		while(i<guestList.length) {
 			if(guestList[i].equals(userName)) {
 				isInvited = true;
 				break;
 			}
+			i++;
 		}
 		
 		if(isInvited) {
