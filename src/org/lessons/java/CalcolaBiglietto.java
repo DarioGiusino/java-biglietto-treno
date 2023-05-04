@@ -34,6 +34,7 @@ public class CalcolaBiglietto {
 		// print ticket price
 		System.out.println("Il prezzo del biglietto è " + ticketPrice);
 		
+		// close the scanner listening
 		scanner.close();
 	}
 }
